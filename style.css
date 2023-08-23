@@ -1,0 +1,158 @@
+body{
+    background: #141414;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+   
+    text-align: center;
+
+}
+section{
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    /* justify-content: center; */
+    align-items: center;
+}
+img{
+    height: 200px;
+    border-radius: 50%;
+}
+form{
+    color: white;
+    margin: 20px;
+}
+form p{
+    
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+
+/*----------------------------------------------------- radio button ----------------------------*/
+input[type="radio"]{
+    /* display: none;
+     */
+     opacity: 0;
+     width: 0;
+     margin: 0;
+}
+label[for="male"],label[for="female"]{
+    cursor: pointer;
+    background: url(/img/checks.png) no-repeat;
+    /* mix-blend-mode: darken;  */
+    line-height: 24px;
+    background-position: 0 -32px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding-left: 26px;
+}
+input:checked + label[for="male"],input:checked + label[for="female"]{
+    background-position: 0 0;
+    color: red;
+}
+input[type="checkbox"]{
+    display: none;
+}
+label[for="web"],label[for="android"],label[for="ai"]{
+    cursor: pointer;
+    line-height: 24px;
+    padding-left: 24px;
+    margin-bottom: 10px;
+    display: inline-block;
+    background: url(/img/checks.png) no-repeat;
+    background-position: 0 -98px;
+}
+input:checked + label[for="web"],input:checked + label[for="android"],input:checked + label[for="ai"]{
+    background-position: 0 -65px;
+    color: red;
+}
+
+/*------------------------------input field----------------------------------------*/
+
+fieldset{
+    padding: 20px;
+    margin:  20px 0px;
+    border: 3px solid #222;
+}
+legend{
+    font-size: 18px;
+    padding: 10px;
+    letter-spacing: 0.1em;
+}
+input[type="email"],
+input[type="telephone"]{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 50px;
+    border: 0;
+    border: 2px solid #222;
+    border-radius: 4px;
+    background: url(/img/inputs.png) no-repeat;
+    background-color: #222;
+    font-size: 16px;
+    color: #fff;
+    float: left;
+    clear: both;
+}
+input[type="email"]{
+    background-position: 7px 8px;
+}
+input[type="telephone"]{
+    background-position: 7px -58px;
+}
+
+/*-----------seelct box-------------*/
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+
+
+    display: block;
+    width: 280px;
+    padding: 10px 50px 10px 10px;
+    background: url(/img/select.png) no-repeat 95% center;
+    background-color: #222;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    text-align: center;
+
+}
+button{
+    background-color: #222;
+    color: #fff;
+    width: 280px;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 0;
+    letter-spacing: 0.1em;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0 0.5);
+
+}
+input[type="email"]:valid,
+input[type="telephone"]:valid{
+    border: 2px solid #fff;
+}
+input[type="email"]:valid {
+    background-position: 7px -22px;
+}
+input[type="telephone"]:valid {
+    background-position: 7px -97px;
+}
+
+input[type="email"]:valid + .tick,
+input[type="telephone"]:valid + .tick{
+    background: url(/img/tick.png);
+    background-size: 100%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 10px;
+}

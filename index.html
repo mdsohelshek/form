@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <img src="/img/7.jpg" alt="">
+            <!-- <img src="https://picsum.photos/200/300?random=1"> -->
+    
+        </header>
+        <form >
+            <!-- gender -->
+            <p>You are a...</p>
+            <input type="radio" id="male" name="gender" >
+            <label for="male">Male</label><br>  
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+            <!-- interest -->
+            <p>You are Interested in.....</p>
+            <input type="checkbox" id="web">
+            <label for="web">Web development</label><br>
+            <input type="checkbox" id="android">
+            <label for="android">Android development</label><br>
+            <input type="checkbox" id="ai">
+            <label for="ai">AI ML</label><br>
+    
+    
+            <!-- contact info -->
+    
+            <fieldset>
+                <legend>contact info..</legend>
+                <input type="email" placeholder="Email" required>
+                <span class="tick"></span>
+                <input type="telephone" placeholder="Mobile Number" required>
+                <span class="tick"></span>
+            </fieldset>
+            <!-- preferation -->
+            <p>How would you like to be contacted ?</p>
+            <select > 
+                <option value="">By Email</option>
+                <option value="">By telephone</option>
+            </select>
+            <button>Become a member</button>
+        </form>
+    </section>
+</body>
+</html>
